@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.1.103",
+    "@nuxt/content": "^2.0.1",
+    "@nuxtjs/color-mode": "^3.1.4",
+    "@unocss/nuxt": "^0.45.15",
+    "@unocss/preset-icons": "^0.45.15",
+    "@vueuse/core": "^9.2.0",
+    "@vueuse/nuxt": "^9.2.0",
+    "nuxt": "3.0.0-rc.9",
+    "nuxt-lodash": "^2.2.0"
+  },
+  "dependencies": {
+    "@nuxtjs/supabase": "^0.1.25",
+    "@pinia/nuxt": "^0.4.2",
+    "@unocss/inspector": "^0.45.13",
+    "@unocss/nuxt": "^0.45.13",
+    "@unocss/preset-attributify": "^0.45.13",
+    "@unocss/preset-icons": "^0.45.13",
+    "@unocss/preset-typography": "^0.45.13",
+    "@unocss/preset-web-fonts": "^0.45.13",
+    "@unocss/reset": "^0.45.18",
+    "chart.js": "^3.9.1",
+    "maz-ui": "^3.0.2",
+    "sweetalert2": "^11.4.32",
+    "vue-chartjs": "^4.1.1"
+  }
+}
