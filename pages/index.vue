@@ -18,10 +18,10 @@
         </div>
         <a href="https://louismazel.github.io/maz-ui-3/components/maz-btn.html">#Buttons</a>
         <div h m="y-8" flex="lg:~ row gap-2" justify="content lg:around">
-            <MazBtn>primary</MazBtn>
-            <MazBtn color="secondary" outline>secondary</MazBtn>
-            <MazBtn color="info" pastel>info</MazBtn>
-            <MazBtn rounded>rounded</MazBtn>
+            <MazBtn @click="flash.dialog('title' , 'body ' , 'info')">primary</MazBtn>
+            <MazBtn @click="flash.toast('primary')" color="secondary" outline>secondary</MazBtn>
+            <MazBtn @click="flash.toast('primary' , 'info')" color="info" pastel>info</MazBtn>
+            <MazBtn @click="flash.toast('error' , 'error')"  rounded color="danger">rounded</MazBtn>
         </div>
         <a href="https://louismazel.github.io/maz-ui-3/components/maz-btn.html">#Inputs</a>
         <div h m="y-8" flex="lg:~ col gap-2" justify="content lg:around">

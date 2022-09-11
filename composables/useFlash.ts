@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
 
 export default function () {
-    function toast(title:string , icon:any = "success") {
+    function toast(title: string, icon: any = "success") {
         const Toast = Swal.mixin({
             toast: true,
             position: 'top',
@@ -17,17 +17,28 @@ export default function () {
         Toast.fire({
             icon: icon,
             title: title
-        }) 
-    }
-
-    function dialog(title:string , icon:any = "success") {
-        Swal.fire({
-            icon: icon,
-            title: title,
-            showConfirmButton: false,
-            timer: 3000
         })
     }
 
-    return {toast , dialog}
+    function dialog(title: string, body:string = '' , icon: any = "success") {
+        Swal.fire({
+            title: title,
+            text: body,
+            icon: icon,
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Done!',
+                    'Something has been done.',
+                    'success'
+                )
+            }
+        })
+    }
+
+    return { toast, dialog }
 }
