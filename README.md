@@ -12,7 +12,7 @@
 
 
 ```bash
-yarn instaLL
+yarn install
 ```
 
 
