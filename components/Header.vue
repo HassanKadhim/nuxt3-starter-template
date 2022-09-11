@@ -7,7 +7,9 @@
             <div flex="lg:~ row" justify="between">
                 <UiIcon v-if="$colorMode.preference == 'dark'" @click="$colorMode.preference = 'light' " font="semibold" text="2xl" w="40px" icon="i-emojione-monotone:crescent-moon" />
                 <UiIcon v-if="$colorMode.preference == 'light'" @click="$colorMode.preference = 'dark' " font="semibold" text="2xl" w="40px" icon="i-bi:sun" />
-                <UiIcon font="semibold" text="2xl" w="40px" icon="i-akar-icons:github-fill" />
+                <a href="https://github.com/HassanKadhim/nuxt3-starter-template" target="_blank">
+                    <UiIcon font="semibold" text="2xl" w="40px" icon="i-akar-icons:github-fill" />
+                </a>
                 <MazBtn size="xs" :to="{path:'/login'}" color="transparent" outline>signIn</MazBtn>
             </div>
         </div>
